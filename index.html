@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="example">
+        <div>
+            <p>Original message: "{{ message }}"</p>
+            <p>Computed reversed message: "{{ reversedMessage }}"</p>
+            <h1>Sample  {{ sample }} </h1>
+            <button @click="getData">click</button>
+
+            <users-component></users-component>
+        </div>
+        
+    </div>
+
+    <div id="example-2">
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+    </div>
+
+    <script src="./js/vendor/vue.js"></script>
+    <script src="./js/vendor/vuex.js"></script>
+    <script src="./js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="./js/vendor/js.cookie.js"></script>
+    <!-- <script src="./js/vendor/vue-js-cookie.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+
+    <script src="./js/components/users/index.js"></script>
+    <script src="./js/components/counter/index.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
